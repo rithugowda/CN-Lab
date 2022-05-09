@@ -75,6 +75,7 @@ $ns at 1.15 "$n3 join-group $rcvr3 $group"; #join the group at simulation time
 set rcvr4 [new Agent/LossMonitor];# create a reciever agent at node 1
 $ns attach-agent $n4 $rcvr4
 $ns at 1.10 "$n4 join-group $rcvr4 $group"; #join the group at simulation time
+$ns at 1.20 "$n4 leave-group $rcvr4 $group";
 
 #===================================
 #        Applications Definition        
