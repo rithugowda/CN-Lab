@@ -100,6 +100,7 @@ proc finish {} {
     close $tracefile
     close $namfile
     exec nam out.nam &
+    exec awk -f prg4.awk out.tr&
     exit 0
 }
 $ns at $val(stop) "$ns nam-end-wireless $val(stop)"
