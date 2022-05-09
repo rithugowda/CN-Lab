@@ -69,10 +69,10 @@ $ns at 1.9 "$n1 join-group $rcvr $group"; #join the group at simulation time
  set rcvr2 [new Agent/LossMonitor];# create a reciever agent at node 2
 $ns attach-agent $n2 $rcvr2
 $ns at 1.12 "$n2 join-group $rcvr2 $group"; #join the group at simulation time
-set rcvr3 [new Agent/LossMonitor];# create a reciever agent at node 1
+set rcvr3 [new Agent/LossMonitor];# create a reciever agent at node 3
 $ns attach-agent $n3 $rcvr3
 $ns at 1.15 "$n3 join-group $rcvr3 $group"; #join the group at simulation time
-set rcvr4 [new Agent/LossMonitor];# create a reciever agent at node 1
+set rcvr4 [new Agent/LossMonitor];# create a reciever agent at node  4
 $ns attach-agent $n4 $rcvr4
 $ns at 1.10 "$n4 join-group $rcvr4 $group"; #join the group at simulation time
 $ns at 1.20 "$n4 leave-group $rcvr4 $group";
